@@ -1,0 +1,11 @@
+create table user_details
+(
+name varchar(30),
+email varchar(40) unique,
+password varchar(15),
+account_no numeric(7) primary key,
+aadhar_no numeric(12),
+state varchar(40),
+foreign key(state) references admin(state),
+swift_id varchar(40)
+);
